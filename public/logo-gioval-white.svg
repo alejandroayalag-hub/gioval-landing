@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 80" width="300" height="80">
+  <defs>
+    <style>
+      .logo-main { font-family: 'Georgia', serif; font-size: 54px; font-weight: 400; fill: #F5F2F0; letter-spacing: -1px; }
+      .logo-sub  { font-family: 'Montserrat', 'Arial', sans-serif; font-size: 9px; font-weight: 500; fill: #F5F2F0; letter-spacing: 0.22em; }
+    </style>
+  </defs>
+  <text x="0" y="54" class="logo-main">gioval</text>
+  <text x="2" y="72" class="logo-sub">MEDICINA ESTÉTICA</text>
+</svg>
