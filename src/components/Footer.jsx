@@ -1,0 +1,64 @@
+import { Instagram, Facebook, MapPin, Phone, Mail } from 'lucide-react'
+
+export default function Footer() {
+  const year = new Date().getFullYear()
+  return (
+    <footer className="bg-gioval-carbon text-white py-16 px-6 lg:px-12">
+      <div className="max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+          <div className="md:col-span-1">
+            <img src="/logo-gioval-white.svg" alt="Gioval" className="h-10 w-auto mb-4" />
+            <p className="font-body text-white/40 text-xs leading-relaxed">
+              Medicina estética de alta especialidad en Querétaro. Belleza respaldada por la ciencia.
+            </p>
+          </div>
+          <div>
+            <p className="font-body text-xs tracking-[0.25em] uppercase text-gioval-lila mb-4">Servicios</p>
+            <ul className="space-y-2">
+              {['Medicina Estética','Tratamientos Faciales','Tratamientos Capilares','Control de Peso','Medicina Regenerativa','Medicina Funcional'].map(s => (
+                <li key={s}>
+                  <a href="#servicios" className="font-body text-white/50 text-xs hover:text-white transition-colors">{s}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <p className="font-body text-xs tracking-[0.25em] uppercase text-gioval-lila mb-4">Contacto</p>
+            <ul className="space-y-3">
+              <li className="flex items-start gap-2">
+                <MapPin size={14} className="text-gioval-malva mt-0.5 flex-shrink-0" />
+                <span className="font-body text-white/50 text-xs leading-relaxed">Querétaro, México</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <Phone size={14} className="text-gioval-malva flex-shrink-0" />
+                <a href="tel:+524421234567" className="font-body text-white/50 text-xs hover:text-white transition-colors">+52 (442) 123-4567</a>
+              </li>
+              <li className="flex items-center gap-2">
+                <Mail size={14} className="text-gioval-malva flex-shrink-0" />
+                <a href="mailto:contacto@gioval.mx" className="font-body text-white/50 text-xs hover:text-white transition-colors">contacto@gioval.mx</a>
+              </li>
+            </ul>
+            <p className="font-body text-white/30 text-xs mt-4">Lun – Sáb · 10:00 – 19:00</p>
+          </div>
+          <div>
+            <p className="font-body text-xs tracking-[0.25em] uppercase text-gioval-lila mb-4">Síguenos</p>
+            <div className="flex gap-3">
+              <a href="https://instagram.com/gioval.mx" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
+                className="p-2 border border-white/20 text-white/50 hover:text-white hover:border-white transition-all duration-200">
+                <Instagram size={16} />
+              </a>
+              <a href="https://facebook.com/gioval.mx" target="_blank" rel="noopener noreferrer" aria-label="Facebook"
+                className="p-2 border border-white/20 text-white/50 hover:text-white hover:border-white transition-all duration-200">
+                <Facebook size={16} />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+          <p className="font-body text-white/30 text-xs">© {year} Gioval Medicina Estética. Todos los derechos reservados.</p>
+          <a href="#" className="font-body text-white/30 text-xs hover:text-white/60 transition-colors">Aviso de privacidad</a>
+        </div>
+      </div>
+    </footer>
+  )
+}
