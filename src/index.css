@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-gioval-crema:   #F5F2F0;
+  --color-gioval-malva:   #887482;
+  --color-gioval-lila:    #ABA3BA;
+  --color-gioval-lavanda: #CCCAD8;
+  --color-gioval-sage:    #CED1CA;
+  --color-gioval-beige:   #DED7CE;
+  --color-gioval-greige:  #BFB9B3;
+  --color-gioval-blanco:  #F8F7F6;
+  --color-gioval-carbon:  #4D4846;
+
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body:    'Montserrat', system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: #F5F2F0;
+  color: #4D4846;
+  -webkit-font-smoothing: antialiased;
+}
