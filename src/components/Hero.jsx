@@ -29,7 +29,7 @@ export default function Hero({ onAgendarClick }) {
           respaldados por ciencia, experiencia y el cuidado de la Dra. Giovanna.
         </p>
 
-        <div className="flex flex-wrap gap-4 mb-16">
+        <div className="flex flex-col sm:flex-row gap-4 mb-16">
           <button onClick={onAgendarClick}
             className="font-body text-xs tracking-[0.2em] uppercase px-8 py-4 bg-gioval-malva text-white hover:bg-white hover:text-gioval-malva transition-all duration-300 cursor-pointer"
           >Agenda tu cita</button>

@@ -72,7 +72,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 pr-16 sm:pr-0">
           <p className="font-body text-white/30 text-xs">© {year} Gioval Medicina Estética. Todos los derechos reservados.</p>
           <a href="#" className="font-body text-white/30 text-xs hover:text-white/60 transition-colors">Aviso de privacidad</a>
         </div>
