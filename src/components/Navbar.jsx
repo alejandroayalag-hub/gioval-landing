@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
 
 const links = [
@@ -27,13 +28,13 @@ export default function Navbar({ onAgendarClick }) {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12 h-36 flex items-center justify-between">
-        <a href="#" className="flex-shrink-0">
+        <Link to="/" className="flex-shrink-0">
           <img
             src={scrolled ? '/logo-gioval.png' : '/logo-gioval-white.png'}
             alt="Gioval Medicina Estética"
             className="h-32 w-auto"
           />
-        </a>
+        </Link>
 
         <nav className="hidden md:flex items-center gap-8">
           {links.map(l => (
