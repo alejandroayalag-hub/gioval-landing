@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
 
 const links = [
@@ -14,6 +14,8 @@ const links = [
 export default function Navbar({ onAgendarClick }) {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
+  const navigate = useNavigate()
+  const agendar = onAgendarClick || (() => navigate('/?agendar=1'))
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40)
@@ -47,7 +49,7 @@ export default function Navbar({ onAgendarClick }) {
         </nav>
 
         <div className="hidden md:flex">
-          <button onClick={onAgendarClick}
+          <button onClick={agendar}
             className="font-body text-xs tracking-widest uppercase px-6 py-2.5 bg-gioval-malva text-white border border-gioval-malva hover:bg-gioval-carbon hover:border-gioval-carbon transition-all duration-200 cursor-pointer"
           >Agenda tu cita</button>
         </div>
@@ -67,7 +69,7 @@ export default function Navbar({ onAgendarClick }) {
               className="font-body text-xs tracking-widest uppercase text-gioval-carbon hover:text-gioval-malva transition-colors"
             >{l.label}</a>
           ))}
-          <button onClick={() => { setMenuOpen(false); onAgendarClick() }}
+          <button onClick={() => { setMenuOpen(false); agendar() }}
             className="mt-2 font-body text-xs tracking-widest uppercase px-6 py-3 bg-gioval-malva text-white cursor-pointer"
           >Agenda tu cita</button>
         </div>

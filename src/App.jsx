@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { useSearchParams } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Services from './components/Services'
@@ -12,8 +13,16 @@ import Footer from './components/Footer'
 
 export default function App() {
   const [modalOpen, setModalOpen] = useState(false)
+  const [searchParams, setSearchParams] = useSearchParams()
   const openModal  = () => setModalOpen(true)
   const closeModal = () => setModalOpen(false)
+
+  useEffect(() => {
+    if (searchParams.get('agendar') === '1') {
+      setModalOpen(true)
+      setSearchParams({}, { replace: true })
+    }
+  }, [])
 
   return (
     <div className="bg-gioval-crema">
