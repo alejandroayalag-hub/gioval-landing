@@ -138,7 +138,7 @@ export default function AppointmentModal({ open, onClose }) {
               </button>
               <p className="font-body text-gioval-greige text-xs text-center leading-relaxed">
                 También puedes escribirnos directamente por{' '}
-                <a href="https://wa.me/521XXXXXXXXXX?text=Hola%20Gioval%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita"
+                <a href="https://wa.me/524521709387?text=Hola%20Gioval%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita"
                   target="_blank" rel="noopener noreferrer" className="text-gioval-malva underline">WhatsApp</a>
               </p>
             </form>
