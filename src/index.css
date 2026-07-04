@@ -1,6 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap');
-
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+  font-family: 'Megante';
+  src: url('/fonts/Megante.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 @theme {
   --color-gioval-crema:   #F5F2F0;
@@ -12,24 +19,39 @@
   --color-gioval-greige:  #BFB9B3;
   --color-gioval-blanco:  #F8F7F6;
   --color-gioval-carbon:  #4D4846;
+  --color-gioval-menta:   #C7DBCC;
 
-  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-display: 'Megante', Georgia, serif;
   --font-body:    'Montserrat', system-ui, sans-serif;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 
-html {
-  scroll-behavior: smooth;
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 body {
-  font-family: var(--font-body);
+  font-family: 'Montserrat', system-ui, sans-serif;
   background-color: #F5F2F0;
   color: #4D4846;
   -webkit-font-smoothing: antialiased;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+  html { scroll-behavior: auto; }
+}
+
+a, button {
+  cursor: pointer;
 }

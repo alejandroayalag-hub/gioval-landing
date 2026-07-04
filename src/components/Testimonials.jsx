@@ -2,7 +2,7 @@ import { Star } from 'lucide-react'
 
 const TESTIMONIALS = [
   { name: 'María G.', treatment: 'Armonización facial',   text: 'Desde la primera valoración me sentí segura. La Dra. Giovanna explicó cada paso del proceso y los resultados superaron mis expectativas. Totalmente recomendada.' },
-  { name: 'Laura M.', treatment: 'Botox y skin boosters', text: 'El ambiente de la clínica es tranquilo y el equipo muy profesional. Me ayudaron a lograr resultados naturales. Ya es mi lugar de confianza en Querétaro.' },
+  { name: 'Laura M.', treatment: 'Botox y skin boosters', text: 'El ambiente de la clínica es tranquilo y el equipo muy profesional. Me ayudaron a lograr resultados naturales. Ya es mi lugar de confianza en Morelia.' },
   { name: 'Ana R.',   treatment: 'PRP capilar',           text: 'Llevaba meses buscando una solución para la pérdida de cabello. Con el tratamiento de la Dra. Giovanna noté cambios desde la primera sesión. Excelente atención.' },
 ]
 
@@ -16,7 +16,7 @@ function Stars() {
 
 export default function Testimonials() {
   return (
-    <section id="testimonios" className="bg-gioval-crema py-24 px-6 lg:px-12">
+    <section id="testimonios" className="bg-gioval-blanco py-24 px-6 lg:px-12">
       <div className="max-w-7xl mx-auto">
         <div className="mb-16">
           <p className="font-body text-xs tracking-[0.3em] uppercase text-gioval-malva mb-4">Testimonios</p>

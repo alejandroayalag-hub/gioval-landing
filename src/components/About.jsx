@@ -21,7 +21,7 @@ export default function About() {
           </p>
           <p className="font-body text-gioval-greige text-sm leading-relaxed mb-8">
             Con más de 8 años de experiencia en medicina estética y certificaciones en las técnicas más
-            avanzadas, la Dra. Giovanna ha atendido a cientos de pacientes en Querétaro que buscan verse
+            avanzadas, la Dra. Giovanna ha atendido a cientos de pacientes en Morelia que buscan verse
             y sentirse mejor, de forma segura.
           </p>
           <div className="grid grid-cols-2 gap-4">
@@ -40,11 +40,17 @@ export default function About() {
         </div>
 
         <div className="relative">
-          <div className="w-full aspect-[3/4] flex items-end p-8"
-            style={{ background: 'linear-gradient(160deg, #CCCAD8 0%, #887482 100%)' }}>
-            <div>
-              <p className="font-display text-white text-xl font-light">Dra. Giovanna</p>
-              <p className="font-body text-white/70 text-xs tracking-widest uppercase">Directora Médica · Gioval</p>
+          <div className="w-full aspect-[3/4] relative overflow-hidden">
+            <img
+              src="/images/about.jpg"
+              alt="Dra. Giovanna — Directora Médica Gioval"
+              className="w-full h-full object-cover object-top"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-8">
+              <div>
+                <p className="font-display text-white text-xl font-light">Dra. Giovanna</p>
+                <p className="font-body text-white/70 text-xs tracking-widest uppercase">Directora Médica · Gioval</p>
+              </div>
             </div>
           </div>
           <div className="absolute -bottom-6 -left-6 bg-gioval-crema shadow-lg p-6 max-w-[160px]">

@@ -1,12 +1,52 @@
 const SERVICES = [
-  { num: '01', name: 'Medicina Estética',     desc: 'Botox, ácido hialurónico, armonización facial y skin boosters.',       color: '#887482' },
-  { num: '02', name: 'Tratamientos Faciales', desc: 'Limpiezas profundas, peelings, microdermoabrasión e hidratación.',      color: '#ABA3BA' },
-  { num: '03', name: 'Trat. Capilares',       desc: 'Implante capilar FUE, PRP capilar y tricología avanzada.',              color: '#CCCAD8' },
-  { num: '04', name: 'Control de Peso',       desc: 'Programas médicos de reducción y recomposición corporal.',              color: '#CED1CA' },
-  { num: '05', name: 'Aparatología',          desc: 'Radiofrecuencia, ultrasonido, criolipólisis y tecnología de punta.',    color: '#DED7CE' },
-  { num: '06', name: 'Tratamientos de Spa',   desc: 'Experiencias de relajación y bienestar integral en clínica.',           color: '#BFB9B3' },
-  { num: '07', name: 'Medicina Regenerativa', desc: 'PRP, factores de crecimiento, bioestimulación y células madre.',        color: '#887482' },
-  { num: '08', name: 'Medicina Funcional',    desc: 'Test epigenético, nutrición de precisión y medicina preventiva.',       color: '#ABA3BA' },
+  {
+    num: '01',
+    name: 'Medicina Estética Inyectable',
+    desc: 'Toxina botulínica (Botox · Dysport · L\'beautox), Baby Botox, Mesobotox Piel de Cristal, ácido hialurónico, skin boosters (PDRN Salmón · TKN HA3 · Exosomas NXO) y bioestimuladores de colágeno (Sculptra · Radiesse · Juvelook).',
+    color: '#887482',
+  },
+  {
+    num: '02',
+    name: 'Tratamientos Faciales',
+    desc: 'Hydrafacial, Geneo Oxigenación Celular, Dermapen Microneedling, peelings químicos (Cosmelan para melasma) y mesoterapia facial Toskani con vitaminas y ácido hialurónico.',
+    color: '#ABA3BA',
+  },
+  {
+    num: '03',
+    name: 'Tratamientos Capilares',
+    desc: 'Tricoscopia digital de alta resolución, mesoterapia capilar (Dermaheal HL · DR.CYJ Hair Filler), Dermapen capilar y células madre capilares CTM con dutasterida para alopecia avanzada.',
+    color: '#CCCAD8',
+  },
+  {
+    num: '04',
+    name: 'Control de Peso',
+    desc: 'Tirzepatida · Mounjaro con seguimiento médico especializado (certificación Tec de Monterrey en Obesidad), y lipolíticos inyectables para grasa localizada en papada, abdomen, flancos y muslos.',
+    color: '#CED1CA',
+  },
+  {
+    num: '05',
+    name: 'Aparatología de Alta Tecnología',
+    desc: 'Depilación láser definitiva LumiMax PL, HIFU lifting sin bisturí, Endolift Laser LYSE Hybrid, radiofrecuencia, presoterapia drenaje linfático, Liposonic y escleroterapia para várices.',
+    color: '#DED7CE',
+  },
+  {
+    num: '06',
+    name: 'Spa y Bienestar',
+    desc: 'Limpieza facial profunda, masaje relajante con aceites esenciales y técnica sueca, drenaje linfático manual, maderoterapia reductiva y Pink Intimate System despigmentación íntima.',
+    color: '#BFB9B3',
+  },
+  {
+    num: '07',
+    name: 'Medicina Regenerativa',
+    desc: 'Terapia con fibroblastos alogénicos Exocell: regeneración celular profunda para rejuvenecimiento facial, cicatrices, alopecia y flacidez. Resultados que mejoran durante 6–12 meses.',
+    color: '#887482',
+  },
+  {
+    num: '08',
+    name: 'Medicina Funcional · Sueroterapia',
+    desc: 'Power Serum (glutatión · vitamina C · complejo B), sueros esenciales y premium, cócteles funcionales IV al 100% de biodisponibilidad, test epigenético y Protocolo Longevidad.',
+    color: '#ABA3BA',
+  },
 ]
 
 function ServiceCard({ num, name, desc, color }) {

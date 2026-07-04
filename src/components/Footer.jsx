@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { MapPin, Phone, Mail } from 'lucide-react'
 
 function InstagramIcon({ size = 16 }) {
@@ -25,9 +26,9 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div className="md:col-span-1">
-            <img src="/logo-gioval-white.svg" alt="Gioval" className="h-10 w-auto mb-4" />
+            <img src="/logo-gioval-white.png" alt="Gioval" className="h-10 w-auto mb-4" />
             <p className="font-body text-white/40 text-xs leading-relaxed">
-              Medicina estética de alta especialidad en Querétaro. Belleza respaldada por la ciencia.
+              Medicina estética de alta especialidad en Morelia. Belleza respaldada por la ciencia.
             </p>
           </div>
           <div>
@@ -45,15 +46,15 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start gap-2">
                 <MapPin size={14} className="text-gioval-malva mt-0.5 flex-shrink-0" />
-                <span className="font-body text-white/50 text-xs leading-relaxed">Querétaro, México</span>
+                <span className="font-body text-white/50 text-xs leading-relaxed">Av Lázaro Cárdenas 2182, Col Chapultepec Sur, CP 58260, Morelia, Michoacán</span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone size={14} className="text-gioval-malva flex-shrink-0" />
-                <a href="tel:+524421234567" className="font-body text-white/50 text-xs hover:text-white transition-colors">+52 (442) 123-4567</a>
+                <a href="tel:+524433046690" className="font-body text-white/50 text-xs hover:text-white transition-colors">+52 (443) 304-6690</a>
               </li>
               <li className="flex items-center gap-2">
                 <Mail size={14} className="text-gioval-malva flex-shrink-0" />
-                <a href="mailto:contacto@gioval.mx" className="font-body text-white/50 text-xs hover:text-white transition-colors">contacto@gioval.mx</a>
+                <a href="mailto:gioval.info@gmail.com" className="font-body text-white/50 text-xs hover:text-white transition-colors">gioval.info@gmail.com</a>
               </li>
             </ul>
             <p className="font-body text-white/30 text-xs mt-4">Lun – Sáb · 10:00 – 19:00</p>
@@ -61,11 +62,11 @@ export default function Footer() {
           <div>
             <p className="font-body text-xs tracking-[0.25em] uppercase text-gioval-lila mb-4">Síguenos</p>
             <div className="flex gap-3">
-              <a href="https://instagram.com/gioval.mx" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
+              <a href="https://www.instagram.com/giovalmx?igsh=aTVkM214bmpseGRi" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
                 className="p-2 border border-white/20 text-white/50 hover:text-white hover:border-white transition-all duration-200">
                 <InstagramIcon size={16} />
               </a>
-              <a href="https://facebook.com/gioval.mx" target="_blank" rel="noopener noreferrer" aria-label="Facebook"
+              <a href="https://www.facebook.com/share/1D47CdhMNb/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"
                 className="p-2 border border-white/20 text-white/50 hover:text-white hover:border-white transition-all duration-200">
                 <FacebookIcon size={16} />
               </a>
@@ -74,7 +75,7 @@ export default function Footer() {
         </div>
         <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 pr-16 sm:pr-0">
           <p className="font-body text-white/30 text-xs">© {year} Gioval Medicina Estética. Todos los derechos reservados.</p>
-          <a href="#" className="font-body text-white/30 text-xs hover:text-white/60 transition-colors">Aviso de privacidad</a>
+          <Link to="/aviso-de-privacidad" className="font-body text-white/30 text-xs hover:text-white/60 transition-colors">Aviso de privacidad</Link>
         </div>
       </div>
     </footer>

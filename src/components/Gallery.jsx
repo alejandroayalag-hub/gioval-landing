@@ -1,9 +1,9 @@
 const CELLS = [
-  { span: 'col-span-2 row-span-2', gradient: 'from-[#887482] to-[#4D4846]', label: 'Tratamientos faciales' },
-  { span: 'col-span-1 row-span-1', gradient: 'from-[#CCCAD8] to-[#ABA3BA]', label: 'Medicina inyectable' },
-  { span: 'col-span-1 row-span-1', gradient: 'from-[#CED1CA] to-[#DED7CE]', label: 'Tratamientos corporales' },
-  { span: 'col-span-1 row-span-2', gradient: 'from-[#ABA3BA] to-[#887482]', label: 'Capilares' },
-  { span: 'col-span-2 row-span-1', gradient: 'from-[#DED7CE] to-[#BFB9B3]', label: 'Ambiente clínica' },
+  { span: 'col-span-2 row-span-2', src: '/images/gallery-1.jpg', pos: 'center', label: 'Tratamientos corporales' },
+  { span: 'col-span-1 row-span-1', src: '/images/gallery-2.jpg', pos: 'center', label: 'Productos especializados' },
+  { span: 'col-span-1 row-span-1', src: '/images/gallery-3.jpg', pos: 'center', label: 'Equipo de precisión' },
+  { span: 'col-span-1 row-span-2', src: '/images/gallery-4.jpg', pos: 'center top', label: 'Medicina inyectable' },
+  { span: 'col-span-2 row-span-1', src: '/images/gallery-5.jpg', pos: 'center 30%', label: 'Nuestro equipo' },
 ]
 
 export default function Gallery() {
@@ -22,7 +22,13 @@ export default function Gallery() {
         <div className="grid grid-cols-3 grid-rows-3 gap-2 h-[480px] md:h-[600px]">
           {CELLS.map(c => (
             <div key={c.label}
-              className={`${c.span} relative overflow-hidden group cursor-pointer bg-gradient-to-br ${c.gradient}`}>
+              className={`${c.span} relative overflow-hidden group cursor-pointer`}>
+              <img
+                src={c.src}
+                alt={c.label}
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                style={{ objectPosition: c.pos }}
+              />
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-300 flex items-end p-4">
                 <p className="font-body text-xs tracking-widest uppercase text-white/0 group-hover:text-white/80 transition-all duration-300">
                   {c.label}
@@ -31,9 +37,6 @@ export default function Gallery() {
             </div>
           ))}
         </div>
-        <p className="font-body text-gioval-greige text-xs text-center mt-6 tracking-wide">
-          Fotos reales de tratamientos y clínica próximamente
-        </p>
       </div>
     </section>
   )

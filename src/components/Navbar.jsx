@@ -2,11 +2,12 @@ import { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
 
 const links = [
-  { label: 'Servicios',   href: '#servicios' },
-  { label: 'Nosotros',    href: '#nosotros' },
-  { label: 'Testimonios', href: '#testimonios' },
-  { label: 'Galería',     href: '#galeria' },
-  { label: 'Contacto',    href: '#contacto' },
+  { label: 'Servicios',      href: '#servicios' },
+  { label: 'Tratamientos',   href: '/tratamientos' },
+  { label: 'Nosotros',       href: '#nosotros' },
+  { label: 'Testimonios',    href: '#testimonios' },
+  { label: 'Galería',        href: '#galeria' },
+  { label: 'Contacto',       href: '#contacto' },
 ]
 
 export default function Navbar({ onAgendarClick }) {
@@ -25,12 +26,12 @@ export default function Navbar({ onAgendarClick }) {
         scrolled ? 'bg-gioval-crema/95 backdrop-blur-sm shadow-sm' : 'bg-transparent'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 h-16 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 h-36 flex items-center justify-between">
         <a href="#" className="flex-shrink-0">
           <img
-            src={scrolled ? '/logo-gioval.svg' : '/logo-gioval-white.svg'}
+            src={scrolled ? '/logo-gioval.png' : '/logo-gioval-white.png'}
             alt="Gioval Medicina Estética"
-            className="h-9 w-auto"
+            className="h-32 w-auto"
           />
         </a>
 

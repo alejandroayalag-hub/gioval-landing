@@ -2,55 +2,57 @@ export default function Hero({ onAgendarClick }) {
   return (
     <section
       id="inicio"
-      className="relative min-h-screen flex flex-col justify-end pb-16 overflow-hidden"
-      style={{ background: 'linear-gradient(135deg, #4D4846 0%, #887482 50%, #ABA3BA 100%)' }}
+      className="relative min-h-screen flex flex-col justify-end pb-20 overflow-hidden"
+      style={{
+        backgroundImage: 'url(/images/hero.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center 30%',
+      }}
     >
-      {/* Decorative circles */}
-      <div className="absolute top-1/4 right-10 w-80 h-80 rounded-full border border-white/10 pointer-events-none" />
-      <div className="absolute top-1/3 right-20 w-48 h-48 rounded-full border border-white/10 pointer-events-none" />
-      <div className="absolute -bottom-20 -left-20 w-96 h-96 rounded-full bg-gioval-malva/20 pointer-events-none" />
+      {/* Overlay oscuro limpio — sin gradiente de color */}
+      <div className="absolute inset-0 bg-black/45 pointer-events-none" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 pt-32">
-        <p className="font-body text-xs tracking-[0.3em] uppercase text-white/60 mb-6">
-          Querétaro, México
+      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 pt-40">
+        <p className="font-body text-xs tracking-[0.4em] uppercase text-white/50 mb-8">
+          Morelia, Michoacán
         </p>
 
-        <h1 className="font-display text-white leading-none mb-6"
-          style={{ fontSize: 'clamp(3rem, 8vw, 7rem)', fontWeight: 400 }}>
+        <h1 className="font-display text-white leading-[0.9] mb-8"
+          style={{ fontSize: 'clamp(4rem, 11vw, 10rem)', fontWeight: 400 }}>
           Revela tu
           <br />
           <em style={{ fontStyle: 'italic', fontWeight: 300, color: '#CCCAD8' }}>
-            versión más radiante
+            versión más
+            <br />radiante
           </em>
         </h1>
 
-        <p className="font-body text-white/70 text-sm tracking-wide max-w-md mb-10 leading-relaxed">
+        <p className="font-body text-white/65 text-sm tracking-wide max-w-sm mb-12 leading-relaxed">
           Medicina estética de alta especialidad. Tratamientos personalizados
-          respaldados por ciencia, experiencia y el cuidado de la Dra. Giovanna.
+          respaldados por ciencia y el cuidado de la Dra. Giovanna.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 mb-16">
+        <div className="flex flex-col sm:flex-row gap-4 mb-20">
           <button onClick={onAgendarClick}
-            className="font-body text-xs tracking-[0.2em] uppercase px-8 py-4 bg-gioval-malva text-white hover:bg-white hover:text-gioval-malva transition-all duration-300 cursor-pointer"
+            className="font-body text-xs tracking-[0.25em] uppercase px-10 py-4 bg-gioval-malva text-white hover:bg-white hover:text-gioval-malva transition-all duration-300 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-transparent"
           >Agenda tu cita</button>
           <a href="#servicios"
-            className="font-body text-xs tracking-[0.2em] uppercase px-8 py-4 border border-white/40 text-white hover:bg-white/10 transition-all duration-300"
+            className="font-body text-xs tracking-[0.25em] uppercase px-10 py-4 border border-white/40 text-white hover:bg-white/10 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
           >Ver servicios</a>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 border-t border-white/20 pt-8">
+        <div className="grid grid-cols-3 gap-8 border-t border-white/15 pt-10">
           {[
             { num: '500+', label: 'Pacientes satisfechas' },
             { num: '8+',   label: 'Años de experiencia' },
             { num: '100+', label: 'Tratamientos especializados' },
-            { num: '9',    label: 'Categorías de servicio' },
           ].map(s => (
             <div key={s.label}>
-              <p className="font-display text-gioval-lavanda leading-none mb-1"
-                style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 300 }}>
+              <p className="font-display text-gioval-lavanda leading-none mb-2"
+                style={{ fontSize: 'clamp(2.5rem, 5vw, 3.5rem)', fontWeight: 300 }}>
                 {s.num}
               </p>
-              <p className="font-body text-white/50 text-xs tracking-widest uppercase">{s.label}</p>
+              <p className="font-body text-white/40 text-xs tracking-widest uppercase">{s.label}</p>
             </div>
           ))}
         </div>

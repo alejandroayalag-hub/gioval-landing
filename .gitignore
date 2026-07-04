@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# Raw photo source dumps (optimized versions live in public/images/)
+wetransfer_*/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

@@ -1,7 +1,6 @@
 export default function AppointmentSection({ onAgendarClick }) {
   return (
-    <section id="contacto" className="py-32 px-6 lg:px-12"
-      style={{ background: 'linear-gradient(135deg, #887482 0%, #4D4846 100%)' }}>
+    <section id="contacto" className="py-32 px-6 lg:px-12 bg-gioval-carbon">
       <div className="max-w-3xl mx-auto text-center">
         <p className="font-body text-xs tracking-[0.3em] uppercase text-white/50 mb-6">Primer paso</p>
         <h2 className="font-display text-white leading-tight mb-6"
@@ -16,12 +15,12 @@ export default function AppointmentSection({ onAgendarClick }) {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button onClick={onAgendarClick}
-            className="font-body text-xs tracking-[0.2em] uppercase px-10 py-4 bg-white text-gioval-malva hover:bg-gioval-crema transition-colors duration-200 cursor-pointer">
+            className="font-body text-xs tracking-[0.25em] uppercase px-10 py-4 bg-white text-gioval-malva hover:bg-gioval-crema transition-colors duration-200 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-gioval-carbon">
             Solicitar valoración
           </button>
-          <a href="https://wa.me/521XXXXXXXXXX?text=Hola%20Gioval%2C%20quisiera%20informaci%C3%B3n%20sobre%20tratamientos"
+          <a href="https://wa.me/524521709387?text=Hola%20Gioval%2C%20quisiera%20información%20sobre%20tratamientos"
             target="_blank" rel="noopener noreferrer"
-            className="font-body text-xs tracking-[0.2em] uppercase px-10 py-4 border border-white/40 text-white hover:bg-white/10 transition-colors duration-200">
+            className="font-body text-xs tracking-[0.25em] uppercase px-10 py-4 border border-white/40 text-white hover:bg-white/10 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white">
             Escribir por WhatsApp
           </a>
         </div>
