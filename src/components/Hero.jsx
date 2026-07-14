@@ -41,9 +41,8 @@ export default function Hero({ onAgendarClick }) {
           >Ver servicios</a>
         </div>
 
-        <div className="grid grid-cols-3 gap-8 border-t border-white/15 pt-10">
+        <div className="grid grid-cols-2 gap-8 border-t border-white/15 pt-10 max-w-lg">
           {[
-            { num: '500+', label: 'Pacientes satisfechas' },
             { num: '8+',   label: 'Años de experiencia' },
             { num: '100+', label: 'Tratamientos especializados' },
           ].map(s => (
