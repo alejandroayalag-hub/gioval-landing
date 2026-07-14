@@ -19,14 +19,16 @@ export default function Hero({ onAgendarClick }) {
 
         <h1 className="font-display text-white leading-[0.95] mb-8"
           style={{ fontSize: 'clamp(2.75rem, 8vw, 7rem)', fontWeight: 400 }}>
-          Estética integral
+          {/* ponytail: margen negativo compensa el bearing izquierdo del glyph "é" en Megante */}
+          Est<span style={{ marginLeft: '-0.05em' }}>ética</span> integral
           <br />
           <em style={{ fontStyle: 'italic', fontWeight: 300, color: '#CCCAD8' }}>
             es salud funcional
           </em>
         </h1>
 
-        <p className="font-body text-white/65 text-sm tracking-wide max-w-sm mb-12 leading-relaxed">
+        <p className="font-display text-white/85 max-w-3xl mb-12 leading-snug"
+          style={{ fontSize: 'clamp(1.5rem, 4.5vw, 4rem)', fontWeight: 300 }}>
           Un espacio seguro diseñado para transformar tu vida.
         </p>
 
