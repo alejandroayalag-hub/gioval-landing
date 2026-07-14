@@ -19,23 +19,41 @@ export default function About() {
             personalizada y basada en evidencia científica. Cada paciente recibe una valoración integral
             antes de cualquier procedimiento.
           </p>
-          <p className="font-body text-gioval-greige text-sm leading-relaxed mb-8">
+          <p className="font-body text-gioval-greige text-sm leading-relaxed mb-4">
             Con más de 8 años de experiencia en medicina estética y certificaciones en las técnicas más
-            avanzadas, la Dra. Giovanna ha atendido a cientos de pacientes en Morelia que buscan verse
+            avanzadas, la Dra. Giovanna ha atendido a cientos de pacientes que buscan verse
             y sentirse mejor, de forma segura.
           </p>
-          <div className="grid grid-cols-2 gap-4">
+          <p className="font-body text-gioval-greige text-sm leading-relaxed mb-8">
+            Su formación en Medicina Funcional le permite ir más allá del síntoma estético: identifica
+            desequilibrios hormonales (SOP, tiroides, resistencia a la insulina), alteraciones del
+            microbioma intestinal y deficiencias nutricionales que impactan directamente en la piel,
+            el cabello y el peso — y los trata de raíz, antes o junto con los tratamientos estéticos.
+          </p>
+          <p className="font-body text-xs tracking-[0.25em] uppercase text-gioval-malva mb-4">Formación y certificaciones</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
             {[
-              'Médico cirujano certificado',
-              'Especialidad en medicina estética',
-              'Expediente clínico conforme a NOM-004',
-              'Miembro de asociaciones médicas',
+              'Especialista en Medicina Estética — IPPC, aval académico UNAM',
+              'Certificada en Medicina Funcional — IEMF',
+              'Certificada en SOP y salud hormonal femenina',
+              'Certificada en Medicina Funcional Gastrointestinal',
+              'Certificada en Tiroides y metabolismo',
+              'Certificada en Suplementación funcional — IEMF',
+              'Certificada en Obesidad — Tecnológico de Monterrey',
             ].map(c => (
               <div key={c} className="flex items-start gap-2">
                 <div className="w-1 h-1 rounded-full bg-gioval-malva mt-1.5 flex-shrink-0" />
                 <p className="font-body text-xs text-gioval-carbon">{c}</p>
               </div>
             ))}
+          </div>
+          <div className="border-t border-gioval-beige pt-6">
+            <p className="font-display text-gioval-carbon mb-2"
+              style={{ fontSize: '1.15rem', fontStyle: 'italic', fontWeight: 300, lineHeight: 1.6 }}>
+              "Los tratamientos estéticos más efectivos son los que trabajan en armonía con tu biología,
+              no en contra de ella. Mi objetivo es que cada paciente luzca increíble porque se siente increíble."
+            </p>
+            <p className="font-body text-xs tracking-widest uppercase text-gioval-greige">— Dra. Giovanna</p>
           </div>
         </div>
 
