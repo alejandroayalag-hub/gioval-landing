@@ -17,19 +17,17 @@ export default function Hero({ onAgendarClick }) {
           Morelia, Michoacán
         </p>
 
-        <h1 className="font-display text-white leading-[0.9] mb-8"
-          style={{ fontSize: 'clamp(4rem, 11vw, 10rem)', fontWeight: 400 }}>
-          Revela tu
+        <h1 className="font-display text-white leading-[0.95] mb-8"
+          style={{ fontSize: 'clamp(2.75rem, 8vw, 7rem)', fontWeight: 400 }}>
+          Estética integral
           <br />
           <em style={{ fontStyle: 'italic', fontWeight: 300, color: '#CCCAD8' }}>
-            versión más
-            <br />radiante
+            es salud funcional
           </em>
         </h1>
 
         <p className="font-body text-white/65 text-sm tracking-wide max-w-sm mb-12 leading-relaxed">
-          Medicina estética de alta especialidad. Tratamientos personalizados
-          respaldados por ciencia y el cuidado de la Dra. Giovanna.
+          Un espacio seguro diseñado para transformar tu vida.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 mb-20">
