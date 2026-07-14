@@ -28,7 +28,7 @@ export default function About() {
             {[
               'Médico cirujano certificado',
               'Especialidad en medicina estética',
-              'Certificación internacional NOM-004',
+              'Expediente clínico conforme a NOM-004',
               'Miembro de asociaciones médicas',
             ].map(c => (
               <div key={c} className="flex items-start gap-2">

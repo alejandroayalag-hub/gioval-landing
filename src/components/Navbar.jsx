@@ -3,12 +3,12 @@ import { Link, useNavigate } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
 
 const links = [
-  { label: 'Servicios',      href: '#servicios' },
+  { label: 'Servicios',      href: '/#servicios' },
   { label: 'Tratamientos',   href: '/tratamientos' },
-  { label: 'Nosotros',       href: '#nosotros' },
-  { label: 'Testimonios',    href: '#testimonios' },
-  { label: 'Galería',        href: '#galeria' },
-  { label: 'Contacto',       href: '#contacto' },
+  { label: 'Nosotros',       href: '/#nosotros' },
+  { label: 'Testimonios',    href: '/#testimonios' },
+  { label: 'Galería',        href: '/#galeria' },
+  { label: 'Contacto',       href: '/#contacto' },
 ]
 
 export default function Navbar({ onAgendarClick }) {

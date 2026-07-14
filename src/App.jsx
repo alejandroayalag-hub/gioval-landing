@@ -22,6 +22,9 @@ export default function App() {
       setModalOpen(true)
       setSearchParams({}, { replace: true })
     }
+    if (window.location.hash) {
+      document.getElementById(window.location.hash.slice(1))?.scrollIntoView()
+    }
   }, [])
 
   return (

@@ -36,7 +36,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {['Medicina Estética','Tratamientos Faciales','Tratamientos Capilares','Control de Peso','Medicina Regenerativa','Medicina Funcional'].map(s => (
                 <li key={s}>
-                  <a href="#servicios" className="font-body text-white/50 text-xs hover:text-white transition-colors">{s}</a>
+                  <a href="/#servicios" className="font-body text-white/50 text-xs hover:text-white transition-colors">{s}</a>
                 </li>
               ))}
             </ul>
