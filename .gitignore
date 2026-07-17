@@ -25,3 +25,4 @@ wetransfer_*/
 *.njsproj
 *.sln
 *.sw?
+.env
