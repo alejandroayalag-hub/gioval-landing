@@ -11,11 +11,13 @@ const links = [
   { label: 'Contacto',       href: '/#contacto' },
 ]
 
-export default function Navbar({ onAgendarClick }) {
-  const [scrolled, setScrolled] = useState(false)
+// solid: páginas sin hero oscuro (fondo claro desde arriba)
+export default function Navbar({ onAgendarClick, solid = false }) {
+  const [scrolledReal, setScrolled] = useState(false)
+  const scrolled = scrolledReal || solid
   const [menuOpen, setMenuOpen] = useState(false)
   const navigate = useNavigate()
-  const agendar = onAgendarClick || (() => navigate('/?agendar=1'))
+  const agendar = onAgendarClick || (() => navigate('/agendar'))
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40)

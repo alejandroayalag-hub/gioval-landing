@@ -57,7 +57,7 @@ export default function Footer() {
                 <a href="mailto:gioval.info@gmail.com" className="font-body text-white/50 text-xs hover:text-white transition-colors">gioval.info@gmail.com</a>
               </li>
             </ul>
-            <p className="font-body text-white/30 text-xs mt-4">Lun – Sáb · 10:00 – 19:00</p>
+            <p className="font-body text-white/30 text-xs mt-4">Lun – Vie · 8:00 – 17:00 · Sáb · 9:00 – 14:00</p>
           </div>
           <div>
             <p className="font-body text-xs tracking-[0.25em] uppercase text-gioval-lila mb-4">Síguenos</p>

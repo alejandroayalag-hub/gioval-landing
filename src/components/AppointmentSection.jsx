@@ -10,13 +10,13 @@ export default function AppointmentSection({ onAgendarClick }) {
           <em style={{ fontStyle: 'italic', color: '#CCCAD8' }}>comienza aquí</em>
         </h2>
         <p className="font-body text-white/60 text-sm leading-relaxed mb-12 max-w-lg mx-auto">
-          Agenda una valoración sin compromiso. La Dra. Giovanna te escuchará,
+          Agenda en línea tu valoración. La Dra. Giovanna te escuchará,
           evaluará tu caso y te presentará un plan de tratamiento personalizado.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button onClick={onAgendarClick}
             className="font-body text-xs tracking-[0.25em] uppercase px-10 py-4 bg-white text-gioval-malva hover:bg-gioval-crema transition-colors duration-200 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-gioval-carbon">
-            Solicitar valoración
+            Agendar valoración
           </button>
           <a href="https://wa.me/524521709387?text=Hola%20Gioval%2C%20quisiera%20información%20sobre%20tratamientos"
             target="_blank" rel="noopener noreferrer"
@@ -25,7 +25,7 @@ export default function AppointmentSection({ onAgendarClick }) {
           </a>
         </div>
         <p className="font-body text-white/40 text-xs mt-10 tracking-widest uppercase">
-          Lunes a Sábado · 10:00 am – 7:00 pm
+          Lunes a Viernes 8:00 am – 5:00 pm · Sábado 9:00 am – 2:00 pm
         </p>
       </div>
     </section>
